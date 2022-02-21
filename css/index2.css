@@ -1,0 +1,41 @@
+.grid {
+  border: 1px solid lightskyblue;
+  display: grid;
+
+  grid-template-columns: repeat(6, [col] 1fr);
+  grid-template-rows: repeat(3, [row] 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  min-height: 80px;
+}
+
+.grid-item-1 {
+  background-color: lemonchiffon;
+  grid-column: col 1 / col 3;
+}
+
+.grid-item-2 {
+  background-color: lightgreen;
+  grid-column: col 3 / col 5;
+  grid-row: row 1 / row 3;
+}
+
+.grid-item-3 {
+  background-color: lightpink;
+  grid-column: col 5;
+  grid-row: row 1 / row 3;
+}
+
+.grid-item-9 {
+  background-color: lightskyblue;
+  grid-column: col 2 / col 4;
+  grid-row: row 3;
+}
+
+.grid-item-10 {
+  background-color: lightcoral;
+  grid-column: col 4 / col 6;
+  grid-row: row 3;
+}

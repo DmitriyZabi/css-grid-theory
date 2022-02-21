@@ -1,0 +1,31 @@
+.grid {
+  border: 1px solid lightskyblue;
+  display: grid;
+  /*grid-template-columns: 1fr 2fr 3fr;*/
+  /*grid-template-columns: min-content 200px max-content;*/ /* 1-я колонка: размер самого длинного слова, 2-я: 200px, 3-я: ширина контента */
+  /*grid-template-columns: 200px 100px minmax(300px, 400px);*/ /* 3-я колонка: ширина от 300px До 400px */
+  grid-template-columns: repeat(3, 1fr); /* 3 одинаковых колонки */
+  /*grid-column-gap: 15px;*/ /* расстояние между колонками */
+  grid-template-rows: repeat(3, 1fr); /* 3 одинаковых строки */
+}
+
+.grid-item-1 {
+  background-color: lemonchiffon;
+  /*grid-column-start: 3;*/ /* начинается с 3й линии столбца */
+  /*grid-column-end: 4;*/ /* заканчивается на 4й линии столбца */
+  /*grid-row-start: 3;*/ /* начинается с 3й линии строки */
+  /*grid-row-end: 4;*/ /* заканчивается на 4й линии строки */
+  /*или*/
+  /*grid-column: 3 / 4;
+  grid-row: 1 / 4;*/
+  /*или*/
+  grid-area: 1 / 3 / 4 / 4;
+}
+
+.grid-item-2 {
+  background-color: lightgreen;
+}
+
+.grid-item-3 {
+  background-color: lightpink;
+}

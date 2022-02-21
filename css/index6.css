@@ -1,0 +1,41 @@
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+}
+
+.grid-1 {
+  height: 100vh;
+}
+
+.grid-2 {
+  grid-template-columns: 1fr 5fr;
+}
+
+.grid-item-1,
+.grid-item-6 {
+  background-color: lemonchiffon;
+}
+
+.grid-item-2,
+.grid-item-7 {
+  background-color: lightgreen;
+}
+
+.grid-item-3,
+.grid-item-8 {
+  background-color: lightpink;
+}
+
+.grid-item-4,
+.grid-item-9 {
+  background-color: lightskyblue;
+}
+
+.grid-item-10 {
+  background-color: lightcoral;
+}
+
+.grid-item-5 {
+  grid-column: span 2;
+}

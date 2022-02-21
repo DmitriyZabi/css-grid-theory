@@ -1,0 +1,16 @@
+.grid {
+  border: 1px solid lightskyblue;
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px;
+
+  align-items: center;
+  justify-items: center;
+}
+
+.grid-item-1 {
+  background-color: lemonchiffon;
+  /*align-self: end;
+  justify-self: center;*/
+}

@@ -1,0 +1,26 @@
+.grid {
+  border: 1px solid lightskyblue;
+  display: grid;
+  grid-gap: 14px;
+  height: 600px;
+
+  align-content: space-between;
+  /*justify-content: center;*/
+}
+
+.grid-item {
+  width: 100px;
+  height: 100px;
+}
+
+.grid-item-1 {
+  background-color: lemonchiffon;
+}
+
+.grid-item-2 {
+  background-color: lightgreen;
+}
+
+.grid-item-3 {
+  background-color: lightpink;
+}
